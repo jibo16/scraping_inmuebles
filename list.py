@@ -1,3 +1,9 @@
-#!/usr/bin/python3
+import concurrent.futures
+import random
+import cloudscraper
+import time
+import requests
 
-print("give me a bottle of rum!")
+
+def get_data(url):
+    r = requests.get('')
