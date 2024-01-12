@@ -2,7 +2,6 @@ import gzip
 import os
 import pandas as pd
 from lxml import etree
-import cloudscraper
 
 
 url = 'https://www.inmuebles24.com/sitemaps_https.xml'
