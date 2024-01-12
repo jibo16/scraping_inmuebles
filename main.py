@@ -2,9 +2,13 @@ import gzip
 import os
 import pandas as pd
 from lxml import etree
+import cloudscraper
 
 
+url = 'https://www.inmuebles24.com/sitemaps_https.xml'
+scraper = cloudscraper.create_scraper()
 
+res = scraper.get(url).text
 
 directory = '/home/jib/Desktop/scraping_inmuebles'
 xml_gz_files = [f for f in os.listdir(directory) if f.endswith('.xml.gz')]
